@@ -42,7 +42,7 @@ Ensure the following Python libraries are installed:
 ### 1. **Hard-Coded Path Version**
 
 1. Open `hardcodedmarcoil.py` in your preferred Python IDE.  
-2. Set the `input_file` variable to the path of the MARCOIL file you wish to convert:
+2. Set the `input_file` variable to the path of the MARCOIL ProbList output file you wish to convert:
 
     ```python
     input_file = "./path/to/your/file"
