@@ -1,31 +1,47 @@
-# marcoiltocsv
-Script to convert output of MARCOIL coiled-coil prediction to a long-format CSV file for analysis
+# MARCOIL to CSV Converter
 
-EVERYTHING MARCOIL IS CREDITED TO THE AUTHORS AND ORIGINAL DESIGNERS OF MARCOIL
+**A script to convert MARCOIL coiled-coil prediction outputs into a long-format CSV file for downstream analysis.**  
+*All credit for MARCOIL and its functionality goes to its original authors and designers.*
 
-**WHY DID I WANT TO MAKE THIS?**
+---
 
-I was doing some data analysis with MARCOIL, and the output isn't in the most immediately useable format. I output predictions from quite a few databses, 
-so thought it might be nice to make a script that will format it for me automatically should I want to analyze any other databses or species. I got to practice 
-using command line arguments for this project, which was a fun learning experience!
+## **Why Use This Script?**
 
-Coming in the future I'd like to be able to concatenate datafile output if an argument is given to concatenate the files. Currently they are output individually.
+The MARCOIL output is not immediately analysis-friendly, especially when handling multiple datasets or species predictions. This script automates the conversion process to streamline data analysis, saving time and reducing errors.
 
+Key highlights:
+- Converts MARCOIL output into a long-format CSV file for easier analysis.
+- Includes command-line arguments for greater flexibility.
+- A great practice tool for integrating file handling and data processing with Python.
 
-Dependencies Information: 
-Name: pandas Version: 2.2.3
-Name: re
-Name: argparse
-Name: os
+---
 
+## **Features**
 
-**HOW TO USE THIS CODE?**
+- Converts single MARCOIL output files into CSV format.  
+- **Two versions** of the script are available:
+  1. **Hard-Coded Path Version**: For quick use with a pre-defined file path.
+  2. **Command-Line Interface (CLI) Version**: For flexibility and batch processing.  
+- In the future: **Concatenation of multiple files** into one CSV file when a specific argument is provided.
 
-I put two versions up, one hard-coded path version and one command line version. 
+---
 
-1. **Hard Coded Path**:
-To use the hard-coded path, open the hardcodedmarcoil.py script in your python IDE of choice and set the path to your file of choice. Run all the lines, and save the df_final to your output path of choice. 
-'''
-input_file = "./path/to/your/file"
+## **Dependencies**
 
-'''
+Ensure the following Python libraries are installed:
+
+- `pandas` (tested with version 2.2.3)
+- `re` (Python standard library)
+- `argparse` (Python standard library)
+- `os` (Python standard library)
+
+---
+
+## **Installation**
+
+Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/your-repo/marcoil-to-csv.git
+cd marcoil-to-csv
+
