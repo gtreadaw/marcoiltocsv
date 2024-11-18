@@ -37,11 +37,35 @@ Ensure the following Python libraries are installed:
 
 ---
 
-## **Installation**
+## **How to Use the Script**
+1. Hard-Coded Path Version
 
-Clone this repository to your local machine:
+    Open hardcodedmarcoil.py in your preferred Python IDE.
 
-```bash
-git clone https://github.com/your-repo/marcoil-to-csv.git
-cd marcoil-to-csv
+    Set the input_file variable to the path of the MARCOIL file you wish to convert:
 
+```input_file = "./path/to/your/file"```
+
+Run the script.
+
+Save the resulting df_final DataFrame to your desired output path.
+
+2. Command-Line Interface
+
+  The commmand-line interface takes three arguments:
+  
+  - `Input` (Path to your input file)
+  - `Output` (Path to your ourput file)
+  - `filetype` (Output file type either txt or csv. Defaults to txt file.)
+
+  Open your commandline of choice  -I have tested it with Bash only-
+
+  Run the command-line interface in the following way: 
+  ```python cli-marcoilconvert.py ./path/to/your/input.txt ./path/to/your/output.txt csv```
+
+  If you want to run multiple input files, just add them sequentually like so: 
+  Make sure the output is just a folder, not a file name. It will output all files with the input file name with _processed amended to the end. 
+  
+   ```python cli-marcoilconvert.py ./path/to/your/input.txt ./path/to/your/input2.txt ./path/to/your/output csv```
+
+   
