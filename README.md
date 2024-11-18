@@ -38,36 +38,51 @@ Ensure the following Python libraries are installed:
 ---
 
 ## **How to Use the Script**
-1. Hard-Coded Path Version
 
-    Open hardcodedmarcoil.py in your preferred Python IDE.
+### 1. **Hard-Coded Path Version**
 
-    Set the input_file variable to the path of the MARCOIL file you wish to convert:
+1. Open `hardcodedmarcoil.py` in your preferred Python IDE.  
+2. Set the `input_file` variable to the path of the MARCOIL file you wish to convert:
 
-```input_file = "./path/to/your/file"```
+    ```python
+    input_file = "./path/to/your/file"
+    ```
 
-Run the script.
+3. Run the script.  
+4. Save the resulting `df_final` DataFrame to your desired output path.
 
-Save the resulting df_final DataFrame to your desired output path.
+---
 
-2. Command-Line Interface
+### 2. **Command-Line Interface (CLI) Version**
 
-  The commmand-line interface takes three arguments:
+The command-line interface takes three arguments:  
+- **`input`**: Path to your input file(s).  
+- **`output`**: Path to your output file or directory.  
+- **`filetype`**: (Optional) File type for the output, either `txt` or `csv`. Defaults to `txt`.
+
+#### **Steps to Use CLI:**
+
+1. Open your command line interface of choice (*tested with Bash*).  
+2. Run the script with the following syntax:
+
+    ```bash
+    python cli-marcoilconvert.py <input> <output> [filetype]
+    ```
+
+#### **Example for a Single Input File:**
+
+```bash
+python cli-marcoilconvert.py ./path/to/your/input.txt ./path/to/your/output.txt csv
+```
+
+#### **Example for Multiple Input Files:**
+```bash
+python cli-marcoilconvert.py ./path/to/your/input1.txt ./path/to/your/input2.txt ./path/to/output_directory csv
+```
+
+Important Notes:
+
+  For multiple input files, the output should be a folder, not a specific file name.
+  The output files will be saved in the folder you specify, with _processed appended to their original filenames.
   
-  - `Input` (Path to your input file)
-  - `Output` (Path to your ourput file)
-  - `filetype` (Output file type either txt or csv. Defaults to txt file.)
-
-  Open your commandline of choice  -I have tested it with Bash only-
-
-  Run the command-line interface in the following way: 
-  
-  ```python cli-marcoilconvert.py ./path/to/your/input.txt ./path/to/your/output.txt csv```
-
-  If you want to run multiple input files, just add them sequentually like so: 
-  
-   ```python cli-marcoilconvert.py ./path/to/your/input.txt ./path/to/your/input2.txt ./path/to/your/output csv```
-
-  Make sure the output is just a folder, not a file name. It will output all files with the input file name with _processed amended to the end. 
-
-   
+  Example: `input1.txt` → `input1_processed.csv`.
