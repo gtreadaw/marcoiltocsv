@@ -4,6 +4,7 @@ Script to convert output of MARCOIL coiled-coil prediction to a long-format CSV 
 EVERYTHING MARCOIL IS CREDITED TO THE AUTHORS AND ORIGINAL DESIGNERS OF MARCOIL
 
 **WHY DID I WANT TO MAKE THIS?**
+
 I was doing some data analysis with MARCOIL, and the output isn't in the most immediately useable format. I output predictions from quite a few databses, 
 so thought it might be nice to make a script that will format it for me automatically should I want to analyze any other databses or species. I got to practice 
 using command line arguments for this project, which was a fun learning experience!
@@ -19,6 +20,7 @@ Name: os
 
 
 **HOW TO USE THIS CODE?**
+
 I put two versions up, one hard-coded path version and one command line version. 
 
 1. **Hard Coded Path**:
