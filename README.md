@@ -65,8 +65,9 @@ Save the resulting df_final DataFrame to your desired output path.
   ```python cli-marcoilconvert.py ./path/to/your/input.txt ./path/to/your/output.txt csv```
 
   If you want to run multiple input files, just add them sequentually like so: 
-  Make sure the output is just a folder, not a file name. It will output all files with the input file name with _processed amended to the end. 
   
    ```python cli-marcoilconvert.py ./path/to/your/input.txt ./path/to/your/input2.txt ./path/to/your/output csv```
+
+  Make sure the output is just a folder, not a file name. It will output all files with the input file name with _processed amended to the end. 
 
    
