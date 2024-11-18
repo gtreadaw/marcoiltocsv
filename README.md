@@ -61,6 +61,7 @@ Save the resulting df_final DataFrame to your desired output path.
   Open your commandline of choice  -I have tested it with Bash only-
 
   Run the command-line interface in the following way: 
+  
   ```python cli-marcoilconvert.py ./path/to/your/input.txt ./path/to/your/output.txt csv```
 
   If you want to run multiple input files, just add them sequentually like so: 
