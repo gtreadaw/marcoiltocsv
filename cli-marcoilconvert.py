@@ -106,7 +106,7 @@ def main():
         # If only a directory is provided, use a default filename
         output_file = os.path.join(args.output_path, "processed_data.") 
     else:
-        # If the user provided a full file path, use it as is
+        # If provided a full file path, use it as is
         output_file = args.output_path
         
 
